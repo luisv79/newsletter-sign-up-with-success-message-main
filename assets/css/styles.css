@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--Dark-Slate-Grey);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  :root{
+    /* Primary */
+
+--Tomato: hsl(4, 100%, 67%);
+--Tomato-soft: hsl(4, 100%, 95%);
+
+/* Neutral */
+
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+  }
+
+
+
+  
+.hero{
+  
+  background-color: var(--White);
+  margin: auto;  
+  width: 375px;
+}
+
+@media (min-width: 1024px){
+  .hero{
+    display: flex; 
+    margin-top: 110px;
+    width: 930px;
+    flex-direction: row-reverse;
+    border-radius: 15px;
+  }
+  .imagen-principal{
+    border-radius: 15px;
+  }
+}
+
+.imagen{
+  background-image: url("../images/illustration-sign-up-mobile.svg");
+  height: 282px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px){
+  .imagen{
+    background-image: url("../images/illustration-sign-up-desktop.svg");
+    
+    height: 593px;
+    width: 430px;
+    margin: 27px;
+  }
+  
+}
+
+.contenido{
+  margin: 30px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 1024px){
+  .contenido{
+    padding: 10px;
+    margin: 104px 0px 0px 40px;
+  }
+}
+
+.contenido h1{
+  font-size: 2.5rem;
+  color: var(--Charcoal-Grey);
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1024px){
+  .contenido h1{
+    font-size: 3.4rem;
+  }
+}
+
+.texto p{
+  color: var(--Charcoal-Grey);
+  margin-bottom: 40px;
+}
+
+.texto ul{
+  padding-left: 30px;
+}
+
+.texto ul li{
+  list-style-image: url(../images/icon-list.svg);
+  color: var(--Charcoal-Grey);
+  margin-bottom: 24px;
+  padding-left: 10px;
+}
+
+form label{
+  font-weight: 700;
+  font-size: small;
+}
+
+.esconder {
+  display: none !important;
+}
+
+.formulario-enviar{
+  position: relative;
+}
+
+
+
+.formulario-enviar  input[type=email]{
+  font-size: medium;
+  width: 93%;
+  height: 57px;
+  padding-left: 27px;
+  color: var(--Grey);
+  margin-bottom: 26px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.formulario-enviar  input[type=submit]{
+  background-color: var(--Dark-Slate-Grey);
+  font-weight: 700;
+  color: var(--White);
+  width: 100%;
+  height: 57px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.formulario-enviar  input[type=submit]:hover{
+  background: rgb(251,98,73);
+background: linear-gradient(277deg, rgba(251,98,73,1) 0%, rgba(255,89,105,1) 100%);
+}
+
+.formulario-enviar .error-message {
+  color: var(--Tomato);
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: none;
+}
+
+.formulario-enviar.error  input[type=email] {
+  background-color: var(--Tomato-soft);
+  border-color: var(--Tomato);
+  color: var(--Tomato);
+}
+
+.formulario-enviar.error .error-message {
+  display: block;
+}
+
+.contenido-enviado{
+  background-color: var(--White);
+  margin: auto;  
+  width: 375px;
+}
+
+
+
+@media (min-width: 1024px){
+  .contenido-enviado{
+    margin-top: 145px;
+    width: 500px;
+    height: 520px;
+    border-radius: 15px;
+  }
+
+}
+
+.imagen-enviar{
+  padding-top: 57px;
+  padding-left: 25px;
+}
+
+.imagen-enviar_lista{
+  width: 66px;
+}
+
+
+.contenido-enviado-titlulo{
+  margin: 25px;
+  margin-bottom: 270px;
+}
+
+@media (min-width: 1024px){
+  .contenido-enviado-titlulo{
+    margin: 52px;
+    margin-bottom: 20px;
+  }
+}
+
+.contenido-enviado-titlulo h1{
+  color: var(--Charcoal-Grey);
+  font-size: 2.2rem;
+  margin-bottom: 27px;
+}
+
+@media (min-width: 1024px){
+  .contenido-enviado-titlulo h1{
+    font-size: 2.8rem;
+    margin-bottom: 27px;
+  }
+}
+
+.contenido-enviado-titlulo p{
+  color: var(--Charcoal-Grey);
+  line-height: 1.5;
+}
+
+.contenido-enviado-titlulo p span{
+  font-weight: 700;
+}
+
+.contenido-enviado input[type=submit]{
+ background-color: var(--Dark-Slate-Grey);
+  font-weight: 700;
+  color: var(--White);
+  margin: 30px;
+  width: 80%;
+  height: 55px;
+  border-radius: 10px;
+}
+
+@media (min-width: 1024px){
+  .contenido-enviado input[type=submit]{
+    background-color: var(--Dark-Slate-Grey);
+    font-weight: 700;
+    color: var(--White);
+    margin: 30px;
+    width: 80%;
+    height: 55px;
+    border-radius: 10px;
+  }
+}
+
+.contenido-enviado input[type=submit]:hover{
+  background: rgb(251,98,73);
+background: linear-gradient(277deg, rgba(251,98,73,1) 0%, rgba(255,89,105,1) 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
